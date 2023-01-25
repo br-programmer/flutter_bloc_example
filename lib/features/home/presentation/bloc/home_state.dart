@@ -23,7 +23,7 @@ class HomeState extends Equatable {
   final HomeStatus status;
 
   @override
-  List<Object?> get props => [movies, status];
+  List<Object> get props => [movies, status];
 }
 
 extension HomeStateX on HomeState {
