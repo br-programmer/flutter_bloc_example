@@ -1,0 +1,36 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+linter:
+  rules:
+    # To change
+    file_names: false
+    avoid_positional_boolean_parameters: false
+    # To review
+    avoid_dynamic_calls: false
+    overridden_fields: false
+    unawaited_futures: false
+    # Permanent rules
+    lines_longer_than_80_chars: false
+    use_build_context_synchronously: false
+    annotate_overrides: false
+    prefer_if_elements_to_conditional_expressions: false
+    always_use_package_imports: false
+    public_member_api_docs: false
+    unnecessary_lambdas: false
+
+analyzer:
+  strong-mode:
+    implicit-casts: true
+    implicit-dynamic: true
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.gr.dart"
+    - "**/*.config.dart"
+    - "**/*.freezed.dart"
+  errors:
+    unused_import: error
+    invalid_annotation_target: ignore
+    sort_pub_dependencies: ignore
+    avoid_renaming_method_parameters: ignore
+    type_annotate_public_apis: ignore
+    one_member_abstracts: ignore
